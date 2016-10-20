@@ -1,0 +1,31 @@
+
+input {
+    background-color: rgb(212, 129, 32);
+    border-color: rgb(65, 75, 88);
+    border-width: 5px;
+    color: whitesmoke;
+}
+
+body {
+    background-image: url("snowfalling.jpg");
+}
+fieldset {
+    color: rgb(188, 219, 255);
+    margin-right:1041px;
+    background-image: url("hotweather.jpg");
+    border-width:10px;
+    border-color: #a5bde1;
+}
+h4 {
+    font-size: 150%;
+    color: #fdfdfc;
+}
+#Fahrenheit {
+    background-color: #414b58;
+    border-color: rgb(212, 129, 32);
+}
+#Celsius {
+    background-color: #414b58;
+    border-color: rgb(212, 129, 32);
+    color: whitesmoke;
+}
