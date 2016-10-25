@@ -6,24 +6,44 @@
     <title>Temperature Converter</title>
     <script>
 
+        function calculate(key) {
+            var cels;
+            var fahr;
+
+            if (key == 'c') {
+                cels = document.getElementById("Celsius").value;
+                fahr = (cels * 1.8) + 32;
+
+                fahr = fahr.toFixed(2);
+                document.getElementById("Fahrenheit").value = fahr;
+            }
+            else {
+                fahr = document.getElementById("Fahrenheit").value;
+                cels = (fahr - 32) * 5/9;
+
+                cels = cels.toFixed(2);
+                document.getElementById("Celsius").value = cels;
+            }
+        }
+
     </script>
 </head>
 <body>
 
-      <fieldset>
+      <fieldset id="fieldset1">
          <h4>Insert a number into one of the input fields below:</h4>
       </fieldset>
 
   <form id="theForm">
       <fieldset>
         <div>
-            <input type="text" id="Celsius" onkeyup="calculate('c')">
+            <input type="text" id="Celsius" onkeyup="calculate('c')" placeholder="Enter Degrees Celsius">
             <label for="Celsius">Degrees Celsius</label>
         </div>
-       E=Q=U=A=L=S
+       E<span>=</span>Q<span>=</span>U<span>=</span>A<span>=</span>L<span>=</span>S
         <div>
-            <input type="text" id="Fahrenheit" onkeyup="calculate('f')">
-            <label for="Fahrenheit">Degrees Fahrenheit</label>
+            <input type="text" id="Fahrenheit" onkeyup="calculate('f')" placeholder="Enter Degrees Fahrenheit">
+            <label for="Fahrenheit" id="Fahrenheit2">Degrees Fahrenheit</label>
         </div>
   </fieldset>
   </form>
