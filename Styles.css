@@ -11,21 +11,34 @@ body {
 }
 fieldset {
     color: rgb(188, 219, 255);
-    margin-right:1041px;
+    margin-right:520px;
     background-image: url("hotweather.jpg");
     border-width:10px;
     border-color: #a5bde1;
+    margin-left:520px;
 }
 h4 {
     font-size: 150%;
     color: #fdfdfc;
 }
 #Fahrenheit {
-    background-color: #414b58;
+    background-color: #607584;
     border-color: rgb(212, 129, 32);
+    color: #bcdbff;
 }
 #Celsius {
-    background-color: #414b58;
+    background-color: #6a788b;
     border-color: rgb(212, 129, 32);
-    color: whitesmoke;
+    color: #9f0011;
+}
+#Fahrenheit2 {
+    color: #9f0011;
+}
+#fieldset1 {
+    margin-top:40px;
+    margin-left:370px;
+    margin-right:370px;
+}
+span {
+    color: #9f0011;
 }
